@@ -12,6 +12,11 @@
 // Step 1 - Object Creation //////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+var animal = {};
+animal.species = 'dog';
+animal['name'] = 'Rusty'
+animal['noises'] = [];
+console.log(animal);
 
 
 
@@ -19,11 +24,19 @@
 // Step 2 - Array Creation ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-
+var noises = [];
+noises = ['bark'];
+noises.push('yelp');
+noises.unshift('howl');
+noises.push('whine');
+noises[noises.length] = 'whimper';
+console.log(noises.length);
+console.log(noises)
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+animal['noises'] = (noises)
 
 
 
@@ -49,14 +62,34 @@
 //////////////////////////////////////////////////////////////////////
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-
+var animals = [];
+animals.push(animal);
+var duck = { species: 'duck', name: 'Jerome', noises: ['quack', 'honk', 'sneeze', 'woosh'] };
+animals.push(duck);
+console.log(animals);
+var cat = { species: 'cat', name: 'Whiskers', noises: ['meow', 'purr', 'hiss', 'hack'] };
+animals.push(cat);
+var bird = { species: 'bird', name: 'McFly', noises: ['whistle', 'chirp', 'tweet'] };
+animals.push(bird)
+console.log(animals)
 
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+// I chose an array because it is a list of names only//
+var friends = [];
 
+function getRandom(){
+return Math.floor(Math.random() * animals.length)
+}   
 
+var random = getRandom(animals);
+//console.log(random);
+
+friends.push(animals['random'].name)  
+console.log(friends);
+
+animals[2]['friends'] = friends
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
