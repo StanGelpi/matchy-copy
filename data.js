@@ -16,7 +16,7 @@ var animal = {};
 animal.species = 'dog';
 animal['name'] = 'Rusty'
 animal['noises'] = [];
-console.log(animal);
+//console.log(animal);
 
 
 
@@ -30,8 +30,8 @@ noises.push('yelp');
 noises.unshift('howl');
 noises.push('whine');
 noises[noises.length] = 'whimper';
-console.log(noises.length);
-console.log(noises)
+//console.log(noises.length);
+//console.log(noises)
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
@@ -66,12 +66,12 @@ var animals = [];
 animals.push(animal);
 var duck = { species: 'duck', name: 'Jerome', noises: ['quack', 'honk', 'sneeze', 'woosh'] };
 animals.push(duck);
-console.log(animals);
+//console.log(animals);
 var cat = { species: 'cat', name: 'Whiskers', noises: ['meow', 'purr', 'hiss', 'hack'] };
 animals.push(cat);
 var bird = { species: 'bird', name: 'McFly', noises: ['whistle', 'chirp', 'tweet'] };
 animals.push(bird)
-console.log(animals)
+//console.log(animals)
 
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
@@ -86,10 +86,13 @@ return Math.floor(Math.random() * animals.length)
 var random = getRandom(animals);
 //console.log(random);
 
-friends.push(animals['random'].name)  
+friends.push(animals[random].name)  
 console.log(friends);
 
-animals[2]['friends'] = friends
+animals[random]['friends'] = friends
+console.log(animals[random])
+
+
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
