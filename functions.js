@@ -9,43 +9,59 @@
  * and read every instruction carefully.
  */
 
-const { animals } = require("./data");
+const { animalz } = require("./data");
 
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Search ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-function search(animals, name) {
-    for (var i = 0; i < animals.length; i++) {
-        if (animals['name'][i] === name) {
-            return animals[1];
-        } else {
-            return "null"
-        }
-    }
+function search(animalz, name) {
+    for (var i = 0; i < animalz.length; i++) {
+        if (animalz[i].name === name) {
+            return animalz[i];
+        }         
+    }  return null
     
-
-    }
 }
+
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Replace //////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////
-
+////////////////////////////////////////////////////////////////////// 
+function replace(animals, name, replacement) {
+    for (var i = 0; i < animals.length; i++) {
+        if (animals[i]['name'] === name) {
+            animals[i] = replacement
+        }
+    } 
+   
+   }
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Remove ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+function remove(animals, name) {
+    for (var i = 0; i < animals.length; i++){
+        if (animals[i]['name'] === name) {
+            animals.splice(animals[i], 1)
+        }
+    }
+}
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-
-
+function git add .addadd(animals, animal) {
+    for (var i = 0; i < animals.length; i++) {
+    if (animals.hasOwnProperty(animals.name > 0) && 
+            animals.hasOwnProperty(animals.species > 0)) {
+                    animals.push(animal[i])
+                }
+    }
+}
 /**
  * You did it! You're all done with Matchy!
  */
