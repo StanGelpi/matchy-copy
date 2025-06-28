@@ -54,7 +54,7 @@ function remove(animals, name) {
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-function git add .addadd(animals, animal) {
+function add(animals, animal) {
     for (var i = 0; i < animals.length; i++) {
     if (animals.hasOwnProperty(animals.name > 0) && 
             animals.hasOwnProperty(animals.species > 0)) {
